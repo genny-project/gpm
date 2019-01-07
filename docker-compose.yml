@@ -1,0 +1,9 @@
+configurator:
+  build: .
+  env_file:
+     - .env
+  volumes:
+    - ./workspace:/genny-workspace
+    - ~/.m2:/root/.m2
+    - /var/run/docker.sock:/var/run/docker.sock
+    - ~/.genny/credentials:/root/.genny/credentials/
